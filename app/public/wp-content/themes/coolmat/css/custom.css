@@ -8,6 +8,7 @@
     --color-yellow: #F8E71C;
 }
 
+
 body {
     font-family: 'Hanna', sans-serif;
     color: var(--color-black);
@@ -15,6 +16,8 @@ body {
     font-size: 16px;
     line-height: 1.5
 }
+
+h1, p { margin: 0;}
 
 a {
     text-decoration: none;
@@ -128,13 +131,60 @@ a {
     color: var(--color-yellow)
 }
 
+.menu {
+    padding: 30px 0;
+}
+
+.menu-inner {
+    border-bottom: solid 1px var(--color-light-grey);
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.entry-header {
+    background-color: var(--color-red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.entry-title,
+.entry-price {
+    color: var(--color-white);
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+.food {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 0 20px;
+}
+
+.post {
+    display: block;
+}
+
+.wp-post-image {
+    max-width: 100%;
+    width: auto !important;
+    height: auto !important;
+    display: block;
+}
+
 @media (min-width: 1080px) {
-
-
     .hero-title {
         font-size: 180px;
         text-align: center;
         line-height: 0.9;
         margin: 10px;
+    }
+    .food {
+        grid-template-columns: 1fr 1fr;
+        max-width: 1220px;
+        padding: 0;
     }
 }

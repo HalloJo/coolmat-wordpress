@@ -27,7 +27,7 @@ get_header();
 		</div>
 	</section>
 
-	<section class="intro">
+	<section id="intro" class="intro flex-center">
 		<div class="intro-inner container flex-center">
 			<p class="intro-eyebrow">introducing cool mat</p>
 			<p class="intro-synopsis">street food that was born in tough times. street food that everybody loves.
@@ -38,39 +38,52 @@ get_header();
 		</div>
 	</section>
 
-	<?php
-    if (have_posts()):
+	<section id="menu" class="menu flex-center">
 
-	    if (is_home() && !is_front_page()):
-    ?>
-	<header>
-		<h1 class="page-title screen-reader-text">
-			<?php single_post_title(); ?>
-		</h1>
-	</header>
-	<?php
-	    endif;
+		<div class="menu-inner container">
+			<p>menu</p>
+		</div>
 
-	    /* Start the Loop */
-	    while (have_posts()):
-		    the_post();
+		<div class="food">
+			<?php
+            if (have_posts()):
 
-		    /*
-			 * Include the Post-Type-specific template for the content.
-			 * If you want to override this in a child theme, then include a file
-			 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-			 */
-		    get_template_part('template-parts/content', get_post_type());
+	            if (is_home() && !is_front_page()):
+            ?>
+			<header>
+				<h1 class="page-title screen-reader-text">
+					<?php single_post_title(); ?>
+				</h1>
+			</header>
+			<?php
+	            endif;
 
-	    endwhile;
+	            /* Start the Loop */
+	            while (have_posts()):
+		            the_post();
 
-	    the_posts_navigation();
-    else:
+		            /*
+					 * Include the Post-Type-specific template for the content.
+					 * If you want to override this in a child theme, then include a file
+					 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+					 */
+		            get_template_part('template-parts/content', get_post_type());
 
-	    get_template_part('template-parts/content', 'none');
+	            endwhile;
 
-    endif;
-    ?>
+	            the_posts_navigation();
+            else:
+
+	            get_template_part('template-parts/content', 'none');
+
+            endif;
+            ?>
+
+		</div>
+
+
+	</section>
+
 
 </main><!-- #main -->
 
