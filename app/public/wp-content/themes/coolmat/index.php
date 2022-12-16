@@ -17,6 +17,16 @@ get_header();
 
 <main id="primary" class="site-main">
 
+	<!-- HERO -->
+	<section class="hero">
+		<div class="hero-inner container">
+			<h1 class="hero-title"><span>cool mat</span> fried seaweed roll</h1>
+			<h1 class="hero-description"><span>cool mat</span> is a restaurant that creates future flavor nostalgia of
+				street food.
+			</h1>
+		</div>
+	</section>
+
 	<?php
     if (have_posts()):
 
