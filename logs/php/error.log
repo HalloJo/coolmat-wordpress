@@ -3,3 +3,4 @@
 Stack trace:
 #0 {main}
   thrown in /Users/jorikvanruiswijk/Documents/Projects/Wordpress/coolmat/app/public/wp-content/themes/coolmat/index.php on line 15
+[16-Dec-2022 14:38:24 UTC] PHP Parse error:  syntax error, unexpected token "<" in /Users/jorikvanruiswijk/Documents/Projects/Wordpress/coolmat/app/public/wp-content/themes/coolmat/index.php on line 67

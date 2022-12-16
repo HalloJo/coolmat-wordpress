@@ -151,6 +151,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
+    position: relative;
 }
 
 .entry-title,
@@ -158,6 +159,22 @@ a {
     color: var(--color-white);
     font-size: 16px;
     text-transform: lowercase;
+}
+
+.entry-number {
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translateX(-50%);
+    background-color: var(--color-white);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 15px solid var(--color-red);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .food {
@@ -169,6 +186,7 @@ a {
 
 .post {
     display: block;
+    padding-top: 30px;
 }
 
 .wp-post-image {
