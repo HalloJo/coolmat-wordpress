@@ -18,12 +18,23 @@ get_header();
 <main id="primary" class="site-main">
 
 	<!-- HERO -->
-	<section class="hero">
-		<div class="hero-inner container">
+	<section class="hero flex-center">
+		<div class="hero-inner container flex-center">
 			<h1 class="hero-title"><span>cool mat</span> fried seaweed roll</h1>
 			<h1 class="hero-description"><span>cool mat</span> is a restaurant that creates future flavor nostalgia of
 				street food.
 			</h1>
+		</div>
+	</section>
+
+	<section class="intro">
+		<div class="intro-inner container flex-center">
+			<p class="intro-eyebrow">introducing cool mat</p>
+			<p class="intro-synopsis">street food that was born in tough times. street food that everybody loves.
+				<span>cool mat</span> is on a mission to provide future flavor nostalgia of street food for men, women,
+				children, grandpas
+				and grandmas. we only use the best ingredients.
+			</p>
 		</div>
 	</section>
 
