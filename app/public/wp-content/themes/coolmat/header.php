@@ -30,21 +30,26 @@
 		</a>
 
 		<header id="masthead" class="site-header">
-			<div class="site-branding">
-				<img src="<?php bloginfo('template_url'); ?>/assets/coolmat_logo.svg" alt="">
-			</div><!-- .site-branding -->
 
-			<nav id="site-navigation" class="main-navigation">
-				<?php
-                wp_nav_menu(
-                	array(
-                		'theme_location' => 'menu-1',
-                		'menu_id' => 'primary-menu',
-                	)
-                );
-                ?>
-			</nav><!-- #site-navigation -->
-			<div class="language-select">
-				KOR | ENG
+			<div class="header-inner">
+				<div class="site-branding">
+					<img class="site-logo" src="<?php bloginfo('template_url'); ?>/assets/coolmat_logo.svg"
+						alt="Cool mat logo">
+				</div><!-- .site-branding -->
+
+				<nav id="site-navigation" class="main-navigation">
+					<?php
+                    wp_nav_menu(
+                    	array(
+                    		'theme_location' => 'menu-1',
+                    		'menu_id' => 'primary-menu',
+                    	)
+                    );
+                    ?>
+				</nav><!-- #site-navigation -->
+				<div class="language-select">
+					KOR | ENG
+				</div>
+
 			</div>
 		</header><!-- #masthead -->
