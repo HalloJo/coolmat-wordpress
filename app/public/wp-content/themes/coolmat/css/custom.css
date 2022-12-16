@@ -133,11 +133,11 @@ a {
     color: var(--color-yellow)
 }
 
-.menu {
+.food-menu {
     padding: 30px 0;
 }
 
-.menu-inner {
+.food-menu-inner {
     border-bottom: solid 1px var(--color-light-grey);
     width: 100%;
     text-align: center;

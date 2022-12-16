@@ -38,9 +38,9 @@ get_header();
 		</div>
 	</section>
 
-	<section id="menu" class="menu flex-center">
+	<section id="food-menu" class="food-menu flex-center">
 
-		<div class="menu-inner container">
+		<div class="food-menu-inner container">
 			<p>menu</p>
 		</div>
 
