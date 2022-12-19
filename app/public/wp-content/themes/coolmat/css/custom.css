@@ -150,27 +150,27 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px 15px;
     position: relative;
 }
 
 .entry-title,
 .entry-price {
     color: var(--color-white);
-    font-size: 16px;
+    font-size: 12px;
     text-transform: lowercase;
 }
 
 .entry-number {
     position: absolute;
     left: 50%;
-    top: -50%;
+    top: -30%;
     transform: translateX(-50%);
     background-color: var(--color-white);
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    border: 15px solid var(--color-red);
+    border: 10px solid var(--color-red);
 
     display: flex;
     align-items: center;
@@ -207,5 +207,18 @@ a {
         grid-template-columns: 1fr 1fr;
         max-width: 1220px;
         padding: 0;
+    }
+    .entry-header {
+        padding: 15px 30px;
+    }
+    .entry-title,
+    .entry-price {
+        font-size: 16px;
+    }
+    .entry-number {
+        width: 80px;
+        height: 80px;
+        top: -50%;
+        border: 15px solid var(--color-red);
     }
 }
